@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+    .inner  
+        //- if there is no action in form, it is going to render to the same url
+        form.form(method="POST")
+            h2 Reset Your Password  
+            label(for="password") Password
+            input(type="password" name="password" )
+            label(for="password-confirm") Confirm Password
+            input(type="password" name="password-confirm" )
+            input.button(type="Submit" value="Reset Password →")
+            
